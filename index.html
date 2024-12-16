@@ -1,43 +1,70 @@
-<!DOCTYPE html> <!-- ให้ Browser เข้าใจว่าเป็น HTML -->
+<!DOCTYPE html>
 <html lang="en">
-<head> <!-- ข้อมูลเกี่ยวกับเว็บเพจ -->
+<!-- กำหนดภาษาเริ่มต้นของเอกสารเป็นภาษาอังกฤษ -->
+
+<head>
+    <!-- ส่วนหัวของเอกสาร HTML -->
     <meta charset="UTF-8">
+    <!-- กำหนดการเข้ารหัสตัวอักษรเป็น UTF-8 เพื่อรองรับภาษาได้หลากหลาย -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ทำให้เว็บแสดงผลได้ดีทั้งในคอมพิวเตอร์และอุปกรณ์มือถือ -->
     <title>Document</title>
-    <link rel = "stylesheet" href="styles.css"> <!-- Link HTML connect CSS -->
+    <!-- ชื่อของเว็บเพจ -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- เชื่อมต่อไฟล์ CSS ภายนอก -->
 </head>
-<body> <!--โครงสร้าง และ เนื้อหา -->
-    <img src = "yuuta.jpg"  style = "width: 20%; height:auto;" >
-    <h1>Pariman Lorthongdaeng</h1>
-    <a href="https://www.instagram.com/Kam_prm?fbclid=IwY2xjawHGpbpleHRuA2FlbQIxMAABHWlNpoqS9LXTQM7PEsxpig3s7cbysJN405fojbc_OfbWz8xtpptyP4caeg_aem_Lder3ZmFyocrXIXBgc9LGg" target="_blank">Profile</a>
-    <br><a href="contact.html" target="_blank">contact</a>
 
-    <h3>ประสบการณ์การทำงาน</h3>
-   <!-- <ul>
-        <li>2024-Present  LG ELectronic (Thailand)</li>
-        <li>2022-2022     REPCO NEX (SCGC)</li>
-    </ul> -->
-    <!-- ทำให้ List นำเสนอออกมาเป็น Table -->
-    <table >
-        <thead> <!-- สร้างส่วนหัว Column -->
-            <tr>
-                <th> <!-- สร้างส่วนหัว Column -->
-                    Year 
-                </th>
-                <th>  <!-- สร้างส่วนหัว Column -->
-                    Work Place
-                </th>
-            </tr>
-        </thead>
-
+<body>
+    <!-- เริ่มส่วนของเนื้อหาเว็บไซต์ -->
+    <table>
+        <!-- สร้างตารางสำหรับจัดวางข้อมูล -->
         <tr>
-            <td>2024 - Present</td>
-            <td>LG ELectronic(Thailand)</td>
-        </tr>
-        <tr>
-            <td>2022 - 2022</td>
-            <td>REPCO NEX (SCGC)</td>
+            <!-- สร้างแถวใหม่ -->
+            <td style="width: 30%;">
+                <!-- คอลัมน์ซ้ายสำหรับแสดงรูป -->
+                <img src="yuuta.jpg" alt="Profile Picture">
+                <!-- รูปภาพโปรไฟล์ -->
+            </td>
+            <td style="width: 70%;">
+                <!-- คอลัมน์ขวาสำหรับข้อมูล -->
+                <h3>Mr. Pariman Lorthongdaeng</h3>
+                <!-- ชื่อโปรไฟล์ -->
+                <table>
+                    <!-- ตารางย่อยสำหรับแสดงประวัติการทำงาน -->
+                    <thead>
+                        <!-- ส่วนหัวของตาราง -->
+                        <tr>
+                            <th>Year</th>
+                            <!-- หัวข้อสำหรับปี -->
+                            <th>Work Place</th>
+                            <!-- หัวข้อสำหรับสถานที่ทำงาน -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- ส่วนเนื้อหาของตาราง -->
+                        <tr>
+                            <td>2024 - Present</td>
+                            <!-- ปีที่ทำงานปัจจุบัน -->
+                            <td>LG ELectronic (Thailand)</td>
+                            <!-- สถานที่ทำงานปัจจุบัน -->
+                        </tr>
+                        <tr>
+                            <td>2022 - 2022</td>
+                            <!-- ปีที่เคยทำงานก่อนหน้า -->
+                            <td>REPCO NEX (SCGC)</td>
+                            <!-- สถานที่ทำงานก่อนหน้า -->
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <!-- กล่องข้อความแสดงข้อมูลการศึกษา -->
+                    Graduated From Department of Control System and Instrumentation Engineering at King Mongkut's
+                    University of Technology Thonburi
+                    <!-- ข้อมูลมหาวิทยาลัย -->
+                </div>
+            </td>
         </tr>
     </table>
 </body>
+
 </html>
